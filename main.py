@@ -132,7 +132,8 @@ class GeminiProvider(LLMProvider):
                         task_type='retrieval_document',
                     )
                 )
-                embeddings.append(result.embedding)
+                # result.embeddings is a list of ContentEmbedding objects; extract .values
+                embeddings.append([emb.values for emb in result.embeddings][0])
             
             st.success(f"✅ Generated {len(embeddings)} embeddings")
             return embeddings
