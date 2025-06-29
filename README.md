@@ -5,9 +5,10 @@
 ### 1. Create a virtual environment
 
 ```bash
-python -m venv rag_resume_env
-source rag_resume_env/bin/activate  # On Windows: rag_resume_env\Scripts\activate
+uv sync
 ```
+
+If you don't have `uv` installed: [Link](https://docs.astral.sh/uv/getting-started/installation/)
 
 ### 2. Install dependencies
 
@@ -24,16 +25,7 @@ pip install streamlit google-generativeai chromadb pyyaml
 ### 4. Run the application
 
 ```bash
-streamlit run rag_resume_builder.py
-```
-
-## Complete Requirements.txt
-
-```
-streamlit==1.28.0
-google-generativeai==0.3.0
-chromadb==0.4.15
-pyyaml==6.0.1
+uv run streamlit run main.py
 ```
 
 ## Resume Data Format (YAML)
@@ -123,5 +115,3 @@ experience:
 - **Natural Language Generation**: Using LLMs for content creation
 - **Feature Engineering**: Extracting useful information from raw data
 - **Data Pipeline Design**: From ingestion to inference
-
-This project gives you hands-on experience with the entire ML workflow while building something immediately useful for your career!
