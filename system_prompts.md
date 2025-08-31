@@ -23,6 +23,7 @@ Write a professional cover letter for a software engineer position.
 Requirements:
 
 - Professional tone, 3-4 paragraphs
+- Avoid cliche introductions like "I am writing to express my strong interest in...". Try to be more affable and different.
 - Connect candidate's experience directly to job requirements
 - Show genuine enthusiasm for the role and company
 - Include specific technologies mentioned in job description
@@ -35,7 +36,7 @@ Requirements:
 
 Structure:
 
-1. Opening: Express interest and briefly state your relevant experience
+1. Opening: Express interest in a none-cliche way (avoid "I am writing to express my strong interest") and briefly state your relevant experience
 2. Body 1: Highlight most relevant technical achievements
 3. Body 2: Connect your experience to their specific needs
 4. Closing: Express enthusiasm and next steps
