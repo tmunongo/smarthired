@@ -87,7 +87,7 @@ class GeminiProvider(LLMProvider):
     def __init__(self, api_key: str):
         try:
             self.client = genai.Client(api_key=api_key)
-            self.model = 'gemini-2.0-flash'  # Use flash for better availability
+            self.model = 'gemini-2.5-flash' 
             self.embedding_model = "text-embedding-004"  # Updated model
             # Test the connection
             test_response = self.client.models.embed_content(
